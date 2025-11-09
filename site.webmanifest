@@ -2,7 +2,8 @@
   "name": "Mon Super Site",
   "short_name": "SuperSite",
   "description": "Une super application web",
-  "start_url": "/",
+  "start_url": "/test-appli-windows/",
+  "scope": "/test-appli-windows/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0078D7",
@@ -19,5 +20,6 @@
     }
   ]
 }
+
 
 
