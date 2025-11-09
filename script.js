@@ -32,7 +32,10 @@ window.addEventListener('beforeunload', () => {
 // --- Redirection à la réouverture ---
 window.addEventListener('load', () => {
   const last = localStorage.getItem('lastVisited');
-  if (last && window.location.pathname === '/test-appli-windows/') {
-    window.location.replace(last);
+  if (last && window.location.pathname === '/test-appli-windows/' && window.location.pathname + window.location.search !== last) {
+    setTimeout(() => {
+      window.location.replace(last);
+      localStorage.removeItem('lastVisited'); // Nettoyage
+    }, 100);
   }
 });
