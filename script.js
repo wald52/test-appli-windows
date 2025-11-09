@@ -1,7 +1,7 @@
 // --- Enregistrement du Service Worker ---
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('/test-appli-windows/service-worker.js')
       .then(() => console.log('Service Worker enregistré'))
       .catch(err => console.log('Erreur SW :', err));
   });
