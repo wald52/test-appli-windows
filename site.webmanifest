@@ -1,12 +1,12 @@
 {
-  "name": "Mon Super Site",
+  "name": "Super Site",
   "short_name": "SuperSite",
-  "description": "Une super application web",
+  "description": "Une application web universelle installable",
   "start_url": "/test-appli-windows/",
   "scope": "/test-appli-windows/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0078D7",
+  "theme_color": "#0078d7",
   "icons": [
     {
       "src": "/test-appli-windows/icons/icon-192x192.png",
@@ -17,9 +17,26 @@
       "src": "/test-appli-windows/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/test-appli-windows/icons/maskable_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "screenshots": [
+    {
+      "src": "/test-appli-windows/screenshots/app-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/test-appli-windows/screenshots/app-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png"
+    }
+  ],
+  "prefer_related_applications": false
 }
-
-
-
