@@ -3,22 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Super Site</title>
+  <title>Super Site</title>
 
-  <!-- Manifest et thème -->
+  <!-- Manifest PWA -->
   <link rel="manifest" href="/test-appli-windows/site.webmanifest">
-  <meta name="theme-color" content="#0078D7">
+  <meta name="theme-color" content="#0078d7">
 
-  <!-- Favicon classique -->
+  <!-- Favicons classiques -->
   <link rel="icon" href="/test-appli-windows/icons/favicon.ico" type="image/x-icon">
+
+  <!-- Apple PWA support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Super Site">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/test-appli-windows/icons/apple-icon-180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/test-appli-windows/icons/apple-icon-152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/test-appli-windows/icons/apple-icon-167.png">
+
+  <!-- Optional: splash screen iOS -->
+  <link rel="apple-touch-startup-image" href="/test-appli-windows/icons/splash-1170x2532.png" media="(device-width: 390px)">
+
+  <!-- Styles et JS -->
+  <link rel="stylesheet" href="/test-appli-windows/styles.css">
+  <script src="/test-appli-windows/script.js" defer></script>
 </head>
 <body>
-  <h1>Bienvenue sur Mon Super Site !</h1>
-  <button id="install-btn" style="display:none; padding:10px 20px; font-size:16px;">Installer l'application</button>
+  <h1>Bienvenue sur Super Site !</h1>
+  <p>Essaie de naviguer entre plusieurs pages, puis ferme et rouvre l’application pour tester la réouverture sur la dernière page visitée.</p>
 
-  <script src="/test-appli-windows/script.js">
-  </script>
+  <button id="install-btn" style="display:none; padding:10px 20px; font-size:16px;">
+    Installer l'application
+  </button>
 </body>
 </html>
-
-
