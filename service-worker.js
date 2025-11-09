@@ -1,12 +1,12 @@
 // Nom du cache
 const CACHE_NAME = 'super-site-cache-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png'
+  '/test-appli-windows/',
+  '/test-appli-windows/index.html',
+  '/test-appli-windows/styles.css',
+  '/test-appli-windows/script.js',
+  '/test-appli-windows/icons/icon-192x192.png',
+  '/test-appli-windows/icons/icon-512x512.png'
 ];
 
 // Installation : mise en cache des ressources
