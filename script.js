@@ -1,8 +1,8 @@
 // --- Enregistrement du Service Worker ---
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(() => console.log('Service Worker enregistré'))
+    navigator.serviceWorker.register('service-worker.js', { scope: './' })
+      .then(() => console.log('Service Worker enregistré avec scope ./'))
       .catch(err => console.log('Erreur SW :', err));
   });
 }
@@ -32,7 +32,7 @@ window.addEventListener('beforeunload', () => {
 // --- Redirection à la réouverture ---
 window.addEventListener('load', () => {
   const last = localStorage.getItem('lastVisited');
-  if (last && window.location.pathname === '/') {
+  if (last && window.location.pathname === '/test-appli-windows/') {
     window.location.replace(last);
   }
 });
